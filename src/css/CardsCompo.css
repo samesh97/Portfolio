@@ -1,0 +1,28 @@
+.container__
+{
+    height: auto;
+    width: 100%;
+    background: white;
+}
+.exText
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.zoomImage
+{
+    transition: 0.5s all ease-in-out;
+}
+.zoomImage:hover
+{
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.card_video
+{
+    width: 100%;
+}

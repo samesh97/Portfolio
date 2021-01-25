@@ -1,0 +1,19 @@
+.nv{
+    position: fixed;
+    width: 100%;
+    z-index:1;
+    background: #282c34;
+}
+a
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: none;
+}
+.buttonSpan
+{
+    color: white;
+}

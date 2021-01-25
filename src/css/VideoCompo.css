@@ -1,0 +1,40 @@
+.container_
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+.large_video
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+.txt
+{
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    line-height: 1.2;
+}
+p{
+    /*font-family: "Comic Sans MS";*/
+}
+.MyImage
+{
+    height: 30vh;
+}
+._container
+{
+    border-radius: 15px;
+    height: auto;
+    width: 75%;
+    background: rgba(0, 0, 0, 0.3);
+}

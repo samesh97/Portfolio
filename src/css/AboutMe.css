@@ -1,0 +1,23 @@
+.container_____
+{
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    background: #f4f8ff;
+}
+.span_about
+{
+    text-align: center;
+    font-size: 17px;
+}
+.about_row
+{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutText
+{
+    margin-left: auto;
+    margin-right: auto;
+}

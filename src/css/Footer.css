@@ -1,0 +1,33 @@
+.container___
+{
+    background: #282c34;
+    height: auto;
+    width: 100%;
+}
+.icon
+{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.iconDiv
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ros
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+a{
+    color: inherit;
+}
+a:hover
+{
+    color: inherit;
+}
+.footer_span
+{
+    margin-left: 10px;
+}
