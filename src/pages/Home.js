@@ -18,9 +18,9 @@ class Home extends React.Component
             <div>
                 <NavBar/>
                 <VideoCompo/>
+                <AboutMe/>
                 <CardsCompo/>
                 <Technologies/>
-                <AboutMe/>
                 <Footer/>
             </div>
 

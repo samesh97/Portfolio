@@ -17,3 +17,11 @@ a:hover
 {
     color: white;
 }
+.nav-link
+{
+    border-bottom: 3px solid transparent;
+}
+.nav-link:hover
+{
+    border-bottom: 3px solid white;
+}

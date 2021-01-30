@@ -29,13 +29,13 @@ class NavBar extends React.Component
                            </Link>
                         </li>
                         <li className="nav-item active pr-2">
-                            <Link activeClass="active" to="About" spy={true} smooth={true} duration={1000} offset={-90}>
-                                <a className="nav-link text-white">About<span className="sr-only">(current)</span></a>
+                            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
+                                <a className="nav-link text-white">Contact<span className="sr-only">(current)</span></a>
                             </Link>
                         </li>
                         <li className="nav-item active pr-2">
-                            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
-                                <a className="nav-link text-white">Contact<span className="sr-only">(current)</span></a>
+                            <Link activeClass="active" to="About" spy={true} smooth={true} duration={1000} offset={-90}>
+                                <a className="nav-link text-white">About<span className="sr-only">(current)</span></a>
                             </Link>
                         </li>
                     </ul>
