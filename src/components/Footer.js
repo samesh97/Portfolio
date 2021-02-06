@@ -15,19 +15,19 @@ class Footer extends React.Component
                         <div className="text-white iconDiv">
                             <a href="https://github.com/samesh97" target="_blank">
                                 <FaGithubSquare className="icon"/>
-                                <span className="footer_span">Github</span>
+                                {/*<span className="footer_span">Github</span>*/}
                             </a>
                         </div>
                         <div className="text-white iconDiv">
                             <a href="https://www.linkedin.com/in/samesh-buddhika-alahakoon-23065919b/" target="_blank">
                                 <FaLinkedin className="icon"/>
-                                <span className="footer_span">LinkedIn</span>
+                                {/*<span className="footer_span">LinkedIn</span>*/}
                             </a>
                         </div>
                         <div className="text-white iconDiv">
                             <a href="https://www.facebook.com/samesh.buddhika/" target="_blank">
                                 <FaFacebook className="icon"/>
-                                <span className="footer_span">Facebook</span>
+                                {/*<span className="footer_span">Facebook</span>*/}
                             </a>
                         </div>
                     </div>

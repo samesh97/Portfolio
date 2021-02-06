@@ -22,12 +22,14 @@ class Tech extends React.Component
                                 <p className="card-title">Level - PRO</p>
                                 <div className="card-body bg-secondary">
                                     <p className="card-text text-white ">
-                                        - Fragments <br/>
-                                        - Room Database <br/>
-                                        - Broadcast Receivers<br/>
-                                        - Sqlite Database<br/>
-                                        - Shared Preferences <br/>
 
+                                        <ul>
+                                            <li>Fragments</li>
+                                            <li>Room Database</li>
+                                            <li>Broadcast Receivers</li>
+                                            <li>Sqlite Database</li>
+                                            <li>Shared Preferences</li>
+                                        </ul>
 
                                     </p>
                                 </div>
@@ -39,11 +41,14 @@ class Tech extends React.Component
                                 <p className="card-title">Level - PRO</p>
                                 <div className="card-body bg-secondary">
                                     <p className="card-text text-white ">
-                                        - OOP Concepts <br/>
-                                        - Threads<br/>
-                                        - Exceptions <br/>
-                                        - Collections <br/>
-                                        - Generics <br/>
+
+                                        <ul>
+                                            <li>OOP Concepts</li>
+                                            <li>Threads</li>
+                                            <li>Exceptions</li>
+                                            <li>Collections</li>
+                                            <li>Generics</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
@@ -54,11 +59,14 @@ class Tech extends React.Component
                                 <p className="card-title">Level - Beginner</p>
                                 <div className="card-body bg-secondary">
                                     <p className="card-text text-white ">
-                                        - If Conditions<br/>
-                                        - Loops <br/>
-                                        - Switch <br/>
-                                        - Some more <br/>
-                                        - Some more <br/>
+
+                                        <ul>
+                                            <li>If Conditions</li>
+                                            <li>Loops</li>
+                                            <li>Switch</li>
+                                            <li>Some more</li>
+                                            <li>Some more</li>
+                                        </ul>
                                     </p>
                                 </div>
 
@@ -70,11 +78,14 @@ class Tech extends React.Component
                                 <p className="card-title">Level - Beginner</p>
                                 <div className="card-body bg-secondary">
                                     <p className="card-text text-white ">
-                                        - Responsive UI's <br/>
-                                        - Dart Language <br/>
-                                        - Async Functions <br/>
-                                        - HTTP Requests <br/>
-                                        - Image Pickers <br/>
+
+                                        <ul>
+                                            <li>Responsive UI's</li>
+                                            <li>Dart Language</li>
+                                            <li>Async Functions</li>
+                                            <li>HTTP Requests</li>
+                                            <li>Image Pickers</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
@@ -85,11 +96,14 @@ class Tech extends React.Component
                                 <p className="card-title">Level - Advanced</p>
                                 <div className="card-body bg-secondary">
                                     <p className="card-text text-white ">
-                                        - Realtime Database <br/>
-                                        - Firebase Storage <br/>
-                                        - Phone Auth <br/>
-                                        - Email Auth <br/>
-                                        - Push Notifications <br/>
+
+                                        <ul>
+                                            <li>Realtime Database</li>
+                                            <li>Firebase Storage</li>
+                                            <li>Phone Auth</li>
+                                            <li>Email Auth</li>
+                                            <li>Push Notifications</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
