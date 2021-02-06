@@ -1,14 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import Slide from '@material-ui/core/Slide';
 
 import '../css/FullScreenDialog.css';
+
+import {AiOutlineCloseCircle} from 'react-icons/ai';
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: theme.spacing(2),
         flex: 1,
     },
+
 }));
 
 
@@ -30,9 +31,6 @@ export default function FullScreenDialog(props) {
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
 
     const handleClose = () => {
         setOpen(false)
@@ -60,12 +58,19 @@ export default function FullScreenDialog(props) {
                         <Typography variant="h6" className={classes.title}>
                             Preview
                         </Typography>
-                            <span color="inherit" onClick={handleClose} className="dialog_close">close</span>
+
+                        <AiOutlineCloseCircle onClick={handleClose} className="dialog_close"/>
                     </Toolbar>
                 </AppBar>
-                {
-                    content()
-                }
+
+                    <div className="d-flex justify-content-center container_dialog">
+                        {
+                            content()
+                        }
+                    </div>
+
+
+
 
 
 
