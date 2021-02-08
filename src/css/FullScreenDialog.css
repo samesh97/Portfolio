@@ -6,7 +6,7 @@
 }
 .dialog_toolbar
 {
-    background: #282c34;
+    background: #6e44ff;
     width: 100%;
     height: 50px;
 }
@@ -18,6 +18,6 @@
 }
 .container_dialog
 {
-    background: #282c34;
+    background: white;
     margin-top: 22px;
 }

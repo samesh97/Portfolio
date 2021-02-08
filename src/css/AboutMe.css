@@ -3,23 +3,27 @@
     width: 100%;
     min-height: auto;
     height: auto;
-    background: #F1F1F1;
-    padding-bottom: 80px;
 }
 .span_about
 {
-    text-align: center;
+    text-align: left;
     font-size: 17px;
+    color: white;
 }
 .about_row
 {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+
 }
 .aboutText
 {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+}
+@media screen and (max-width: 750px) {
+    .span_about {
+        text-align: center;
+        font-size: 14px ;
+    }
 }

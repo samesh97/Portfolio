@@ -5,7 +5,7 @@
     margin: 5px;
     height: fit-content;
     border-radius: 6px;
-    background: black;
+    background: #6e44ff;
     color: white;
     border: 1px solid white;
     cursor: pointer;
@@ -20,6 +20,6 @@
 .tag_container:hover
 {
     background: white;
-    color: black;
-    border: 1px solid black;
+    color: #6e44ff;
+    border: 1px solid #6e44ff;
 }

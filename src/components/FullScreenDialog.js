@@ -13,7 +13,7 @@ import {AiOutlineCloseCircle} from 'react-icons/ai';
 const useStyles = makeStyles((theme) => ({
     appBar: {
         position: 'fixed',
-        backgroundColor: '#282c34'
+        backgroundColor: '#6e44ff'
     },
     title: {
         marginLeft: theme.spacing(2),

@@ -1,12 +1,18 @@
 .container_
 {
-    height: 100vh;
+    height: auto;
     width: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    background: #6e44ff;
+    /*box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);*/
     object-fit: contain;
 }
 .large_video
@@ -16,6 +22,7 @@
     height: 100%;
     z-index: -1;
     position: fixed;
+    background: #282c34;
 }
 .txt
 {
@@ -31,7 +38,7 @@ p{
 }
 .MyImage
 {
-    height: 30vh;
+    height: 50vh;
 }
 ._container
 {
@@ -78,4 +85,36 @@ p{
 .whatsapp_container
 {
     margin-top: 5px;
+}
+.what_im_doing_text
+{
+    color: white;
+    font-size: 32px ;
+    font-weight: bold;
+    height: auto;
+
+
+}
+.learn_more
+{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 750px) {
+    .what_im_doing_text {
+        text-align: center;
+        font-size: 25px ;
+    }
+    .learn_more
+    {
+        margin:0 auto;
+        display:block;
+
+    }
+    .learn_more_row
+    {
+        justify-content: center;
+        align-items: center;
+    }
 }

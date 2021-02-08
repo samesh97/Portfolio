@@ -94,9 +94,48 @@ class CardsCompo extends React.Component
         return(
 
             <div className="container__ pt-5 pb-5" id="experiences">
-                <div className="container">
+                <div className="container-fluid">
                     <p className="mb-5 exText" >Recent work</p>
                     <div className="row">
+
+                        <div className="col-sm">
+
+
+                            <div className="carousel-item active">
+
+                                <div className="col-sm zoomImage mb-3">
+                                    <div className="card card__">
+
+
+
+                                        <div className="row card_top_container">
+                                            <div className="col-sm-8">
+                                                <p className="card-title">Singlish Translator</p>
+                                            </div>
+                                            <div className="col-sm-4 justify-content-center align-self-center">
+                                                <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(video,"VIDEO")}/>
+                                            </div>
+                                        </div>
+
+
+                                        <video src={video} autoPlay loop muted className="card_video"/>
+
+
+
+                                        {/*<div className="card-body">*/}
+                                        {/*    <p className="card-text">*/}
+                                        {/*        <Tag list={singlishAppList}/>*/}
+                                        {/*        <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(video,"VIDEO")}/>*/}
+                                        {/*    </p>*/}
+                                        {/*</div>*/}
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className="col-sm">
 
 
                         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -109,41 +148,33 @@ class CardsCompo extends React.Component
                                 <li data-target="#carouselExampleIndicators" data-slide-to="5"/>
                             </ol>
                             <div className="carousel-inner">
+
                                 <div className="carousel-item active">
-
-                                    <div className="col zoomImage mb-3">
-                                        <div className="card card__">
-
-
-                                            <video src={video} autoPlay loop muted className="card_imge"/>
-
-                                            <p className="card-title">Android Singlish Translator</p>
-
-                                            <div className="card-body">
-                                                <p className="card-text">
-                                                    <Tag list={singlishAppList}/>
-                                                    <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(video,"VIDEO")}/>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item">
 
                                             <div className="col-sm zoomImage mb-3">
                                                 <div className="card card__">
+
+                                                    <div className="row ">
+                                                        <div className="col-sm-8">
+                                                            <p className="card-title">Android Food App</p>
+                                                        </div>
+                                                        <div className="col-sm-4 justify-content-center align-self-center">
+                                                            <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(Image11,"IMAGE")}/>
+                                                        </div>
+                                                    </div>
+
 
 
                                                     <img className="card-img-top card_imge" src={Image11} alt="Card image cap"/>
 
 
-                                                    <p className="card-title">Android Food App</p>
-                                                    <div className="card-body">
-                                                        <p className="card-text">
-                                                           <Tag list={foodAppList}/>
-                                                            <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(Image11,"IMAGE")}/>
-                                                        </p>
-                                                    </div>
+
+                                                    {/*<div className="card-body">*/}
+                                                    {/*    <p className="card-text">*/}
+                                                    {/*       <Tag list={foodAppList}/>*/}
+                                                    {/*        <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(Image11,"IMAGE")}/>*/}
+                                                    {/*    </p>*/}
+                                                    {/*</div>*/}
                                                 </div>
                                             </div>
 
@@ -155,17 +186,29 @@ class CardsCompo extends React.Component
                                                 <div className="card card__">
 
 
+                                                    <div className="row ">
+                                                        <div className="col-sm-8">
+                                                            <p className="card-title">Android Photo Editor</p>
+                                                        </div>
+                                                        <div className="col-sm-4 justify-content-center align-self-center">
+                                                            <BsArrowsFullscreen className="full_screen_icon"
+                                                                                onClick={() => this.onCardClicked(Image22,"IMAGE")}/>
+                                                        </div>
+                                                    </div>
+
+
+
                                                     <img className="card-img-top card_imge" src={Image22} alt="Card image cap"/>
 
 
-                                                    <p className="card-title">Android Photo Editor</p>
-                                                    <div className="card-body">
-                                                        <p className="card-text">
-                                                          <Tag list={sinhalaAppList}/>
-                                                            <BsArrowsFullscreen className="full_screen_icon"
-                                                                                onClick={() => this.onCardClicked(Image22,"IMAGE")}/>
-                                                        </p>
-                                                    </div>
+
+                                                    {/*<div className="card-body">*/}
+                                                    {/*    <p className="card-text">*/}
+                                                    {/*      <Tag list={sinhalaAppList}/>*/}
+                                                    {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
+                                                    {/*                            onClick={() => this.onCardClicked(Image22,"IMAGE")}/>*/}
+                                                    {/*    </p>*/}
+                                                    {/*</div>*/}
                                                 </div>
                                             </div>
 
@@ -177,19 +220,31 @@ class CardsCompo extends React.Component
                                     <div className="col-sm zoomImage mb-3">
                                                     <div className="card card__">
 
+
+                                                        <div className="row ">
+                                                            <div className="col-sm-8">
+                                                                <p className="card-title">Android Quote Maker</p>
+                                                            </div>
+                                                            <div className="col-sm-4 justify-content-center align-self-center">
+                                                                <BsArrowsFullscreen className="full_screen_icon"
+                                                                                    onClick={() => this.onCardClicked(Image5,"IMAGE")}/>
+                                                            </div>
+                                                        </div>
+
+
                                                         <img className="card-img-top card_imge" src={Image5} alt="Card image cap"/>
 
 
 
 
-                                                        <p className="card-title">Android Quote Maker</p>
-                                                        <div className="card-body">
-                                                            <p className="card-text">
-                                                                <Tag list={quoteMakerAppList}/>
-                                                                <BsArrowsFullscreen className="full_screen_icon"
-                                                                                    onClick={() => this.onCardClicked(Image5,"IMAGE")}/>
-                                                            </p>
-                                                        </div>
+                                                        {/*<p className="card-title">Android Quote Maker</p>*/}
+                                                        {/*<div className="card-body">*/}
+                                                        {/*    <p className="card-text">*/}
+                                                        {/*        <Tag list={quoteMakerAppList}/>*/}
+                                                        {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
+                                                        {/*                            onClick={() => this.onCardClicked(Image5,"IMAGE")}/>*/}
+                                                        {/*    </p>*/}
+                                                        {/*</div>*/}
                                                     </div>
                                                 </div>
 
@@ -200,19 +255,30 @@ class CardsCompo extends React.Component
                                             <div className="col-sm zoomImage mb-3">
                                                 <div className="card card__">
 
+                                                    <div className="row ">
+                                                        <div className="col-sm-8">
+                                                            <p className="card-title">Flutter Fitness App UI</p>
+                                                        </div>
+                                                        <div className="col-sm-4 justify-content-center align-self-center">
+                                                            <BsArrowsFullscreen className="full_screen_icon"
+                                                                                onClick={() => this.onCardClicked(Image6,"IMAGE")}/>
+                                                        </div>
+                                                    </div>
+
+
 
                                                     <img className="card-img-top card_imge" src={Image6} alt="Card image cap"/>
 
 
 
-                                                    <p className="card-title">Flutter Fitness App UI</p>
-                                                    <div className="card-body">
-                                                        <p className="card-text">
-                                                            <Tag list={fitnessAppList}/>
-                                                            <BsArrowsFullscreen className="full_screen_icon"
-                                                                                onClick={() => this.onCardClicked(Image6,"IMAGE")}/>
-                                                        </p>
-                                                    </div>
+                                                    {/*<p className="card-title">Flutter Fitness App UI</p>*/}
+                                                    {/*<div className="card-body">*/}
+                                                    {/*    <p className="card-text">*/}
+                                                    {/*        <Tag list={fitnessAppList}/>*/}
+                                                    {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
+                                                    {/*                            onClick={() => this.onCardClicked(Image6,"IMAGE")}/>*/}
+                                                    {/*    </p>*/}
+                                                    {/*</div>*/}
                                                 </div>
                                             </div>
 
@@ -224,19 +290,30 @@ class CardsCompo extends React.Component
                                             <div className="col-sm zoomImage">
                                                 <div className="card card__">
 
+                                                    <div className="row">
+                                                        <div className="col-sm-8">
+                                                            <p className="card-title">Flutter Hotel Reservation UI</p>
+                                                        </div>
+                                                        <div className="col-sm-4 justify-content-center align-self-center">
+                                                            <BsArrowsFullscreen className="full_screen_icon"
+                                                                                onClick={() => this.onCardClicked(Image7,"IMAGE")}/>
+                                                        </div>
+                                                    </div>
+
+
 
                                                     <img className="card-img-top card_imge" src={Image7} alt="Card image cap"/>
 
 
 
-                                                    <p className="card-title">Flutter Hotel Reservation UI</p>
-                                                    <div className="card-body">
-                                                        <p className="card-text">
-                                                            <Tag list={hotelAppList}/>
-                                                            <BsArrowsFullscreen className="full_screen_icon"
-                                                                                onClick={() => this.onCardClicked(Image7,"IMAGE")}/>
-                                                        </p>
-                                                    </div>
+                                                    {/*<p className="card-title">Flutter Hotel Reservation UI</p>*/}
+                                                    {/*<div className="card-body">*/}
+                                                    {/*    <p className="card-text">*/}
+                                                    {/*        <Tag list={hotelAppList}/>*/}
+                                                    {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
+                                                    {/*                            onClick={() => this.onCardClicked(Image7,"IMAGE")}/>*/}
+                                                    {/*    </p>*/}
+                                                    {/*</div>*/}
                                                 </div>
                                             </div>
 
@@ -250,10 +327,11 @@ class CardsCompo extends React.Component
                             </a>
                             <a className="carousel-control-next" href="#carouselExampleIndicators" role="button"
                                data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"/>
+                                <span className="carousel-control-next-icon " aria-hidden="false"/>
                                 <span className="sr-only">Next</span>
                             </a>
                         </div>
+                    </div>
                     </div>
                     </div>
 

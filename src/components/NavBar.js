@@ -31,6 +31,7 @@ class NavBar extends React.Component
     render()
     {
         return(
+
             <nav className="navbar navbar-expand-lg navbar-light nv">
                 <a className="navbar-brand text-white  pr-5" href="/">PORTFOLIO</a>
 
