@@ -86,21 +86,21 @@ class NavBar extends React.Component
 
                             </Link>
                         </li>
-                        <li className="nav-item active pr-2">
-                            <Link activeClass="active" to="About" spy={true} smooth={true} duration={1000} offset={-90}>
+                        {/*<li className="nav-item active pr-2">*/}
+                        {/*    <Link activeClass="active" to="About" spy={true} smooth={true} duration={1000} offset={-90}>*/}
 
-                                {
-                                    this.state.selectedTab === this.state.ABOUT_PAGE
-                                    &&  <a className="nav-link text-white nav-link_underlined">About<span className="sr-only">(current)</span></a>
-                                }
-                                {
-                                    this.state.selectedTab !== this.state.ABOUT_PAGE
-                                    &&  <a className="nav-link text-white" onClick={() => this.changeSelectedTab(this.state.ABOUT_PAGE)}>About<span className="sr-only">(current)</span></a>
-                                }
+                        {/*        {*/}
+                        {/*            this.state.selectedTab === this.state.ABOUT_PAGE*/}
+                        {/*            &&  <a className="nav-link text-white nav-link_underlined">About<span className="sr-only">(current)</span></a>*/}
+                        {/*        }*/}
+                        {/*        {*/}
+                        {/*            this.state.selectedTab !== this.state.ABOUT_PAGE*/}
+                        {/*            &&  <a className="nav-link text-white" onClick={() => this.changeSelectedTab(this.state.ABOUT_PAGE)}>About<span className="sr-only">(current)</span></a>*/}
+                        {/*        }*/}
 
 
-                            </Link>
-                        </li>
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                     </ul>
                 </div>
             </nav>

@@ -58,7 +58,7 @@ class Video extends React.Component
                             <div className="row ml-5 mr-5">
 
                                 <p className="what_im_doing_text">Hi, I'm Samesh. I design & build
-                                    Mobile Applications</p>
+                                    Mobile Applications.</p>
                             </div>
 
                             <div className="row ml-5 mr-5">
@@ -66,7 +66,7 @@ class Video extends React.Component
                             </div>
                             <div className="row mt-5 ml-5 mr-5 learn_more_row">
                                 <Link activeClass="active" to="experiences" spy={true} smooth={true} duration={1000} offset={-90}>
-                                    <button type="button" className="btn btn-light learn_more">Learn More</button>
+                                    <button type="button" className="btn btn-light learn_more">Learn more</button>
                                 </Link>
                             </div>
 

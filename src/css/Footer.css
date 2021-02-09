@@ -31,3 +31,27 @@ a:hover
 {
     margin-left: 10px;
 }
+.all_right_reserved_text
+{
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.phone_number_text
+{
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    font-size: 15px
+}
+.email_text
+{
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    font-size: 15px;
+}

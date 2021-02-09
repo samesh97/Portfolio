@@ -10,7 +10,7 @@ class Footer extends React.Component
 
             <div className="container-fluid container___" id="contact">
 
-                <div className="container____ pb-5 pt-5">
+                <div className="container____ pt-5">
                     <div className="d-flex justify-content-center">
                         <div className="text-white iconDiv">
                             <a href="https://github.com/samesh97" target="_blank">
@@ -31,6 +31,23 @@ class Footer extends React.Component
                             </a>
                         </div>
                     </div>
+                </div>
+                <div className="row">
+
+                    <span className="email_text">buddikamsamesh1@gmail.com</span>
+
+                </div>
+                <div className="row">
+
+                    <span className="phone_number_text">+94 78 733 9335</span>
+
+                </div>
+
+
+                <div className="row pb-4">
+
+                    <span className="all_right_reserved_text">Copyright © 2021 Samesh Buddhika, All rights reserved.</span>
+
                 </div>
 
             </div>

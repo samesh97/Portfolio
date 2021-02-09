@@ -6,6 +6,8 @@ import Image22 from '../images/22.png';
 import Image5 from '../images/5.png';
 import Image6 from '../images/6.png';
 import Image7 from '../images/7.png'
+import Image33 from '../images/33.png';
+
 import video from '../videos/video-5.mp4';
 
 import FullScreenDialog from "./FullScreenDialog";
@@ -109,10 +111,10 @@ class CardsCompo extends React.Component
 
 
                                         <div className="row card_top_container">
-                                            <div className="col-sm-8">
+                                            <div className="col">
                                                 <p className="card-title">Singlish Translator</p>
                                             </div>
-                                            <div className="col-sm-4 justify-content-center align-self-center">
+                                            <div className="col justify-content-center align-self-center">
                                                 <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(video,"VIDEO")}/>
                                             </div>
                                         </div>
@@ -155,10 +157,10 @@ class CardsCompo extends React.Component
                                                 <div className="card card__">
 
                                                     <div className="row ">
-                                                        <div className="col-sm-8">
+                                                        <div className="col">
                                                             <p className="card-title">Android Food App</p>
                                                         </div>
-                                                        <div className="col-sm-4 justify-content-center align-self-center">
+                                                        <div className="col justify-content-center align-self-center">
                                                             <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(Image11,"IMAGE")}/>
                                                         </div>
                                                     </div>
@@ -187,10 +189,10 @@ class CardsCompo extends React.Component
 
 
                                                     <div className="row ">
-                                                        <div className="col-sm-8">
+                                                        <div className="col">
                                                             <p className="card-title">Android Photo Editor</p>
                                                         </div>
-                                                        <div className="col-sm-4 justify-content-center align-self-center">
+                                                        <div className="col justify-content-center align-self-center">
                                                             <BsArrowsFullscreen className="full_screen_icon"
                                                                                 onClick={() => this.onCardClicked(Image22,"IMAGE")}/>
                                                         </div>
@@ -222,10 +224,10 @@ class CardsCompo extends React.Component
 
 
                                                         <div className="row ">
-                                                            <div className="col-sm-8">
+                                                            <div className="col">
                                                                 <p className="card-title">Android Quote Maker</p>
                                                             </div>
-                                                            <div className="col-sm-4 justify-content-center align-self-center">
+                                                            <div className="col justify-content-center align-self-center">
                                                                 <BsArrowsFullscreen className="full_screen_icon"
                                                                                     onClick={() => this.onCardClicked(Image5,"IMAGE")}/>
                                                             </div>
@@ -256,10 +258,10 @@ class CardsCompo extends React.Component
                                                 <div className="card card__">
 
                                                     <div className="row ">
-                                                        <div className="col-sm-8">
+                                                        <div className="col">
                                                             <p className="card-title">Flutter Fitness App UI</p>
                                                         </div>
-                                                        <div className="col-sm-4 justify-content-center align-self-center">
+                                                        <div className="col justify-content-center align-self-center">
                                                             <BsArrowsFullscreen className="full_screen_icon"
                                                                                 onClick={() => this.onCardClicked(Image6,"IMAGE")}/>
                                                         </div>
@@ -284,40 +286,74 @@ class CardsCompo extends React.Component
 
                                 </div>
 
-
                                 <div className="carousel-item">
 
-                                            <div className="col-sm zoomImage">
-                                                <div className="card card__">
+                                    <div className="col-sm zoomImage mb-3">
+                                        <div className="card card__">
 
-                                                    <div className="row">
-                                                        <div className="col-sm-8">
-                                                            <p className="card-title">Flutter Hotel Reservation UI</p>
-                                                        </div>
-                                                        <div className="col-sm-4 justify-content-center align-self-center">
-                                                            <BsArrowsFullscreen className="full_screen_icon"
-                                                                                onClick={() => this.onCardClicked(Image7,"IMAGE")}/>
-                                                        </div>
-                                                    </div>
-
-
-
-                                                    <img className="card-img-top card_imge" src={Image7} alt="Card image cap"/>
-
-
-
-                                                    {/*<p className="card-title">Flutter Hotel Reservation UI</p>*/}
-                                                    {/*<div className="card-body">*/}
-                                                    {/*    <p className="card-text">*/}
-                                                    {/*        <Tag list={hotelAppList}/>*/}
-                                                    {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
-                                                    {/*                            onClick={() => this.onCardClicked(Image7,"IMAGE")}/>*/}
-                                                    {/*    </p>*/}
-                                                    {/*</div>*/}
+                                            <div className="row ">
+                                                <div className="col">
+                                                    <p className="card-title">Android Chat App</p>
+                                                </div>
+                                                <div className="col justify-content-center align-self-center">
+                                                    <BsArrowsFullscreen className="full_screen_icon"
+                                                                        onClick={() => this.onCardClicked(Image33,"IMAGE")}/>
                                                 </div>
                                             </div>
 
+
+
+                                            <img className="card-img-top card_imge" src={Image33} alt="Card image cap"/>
+
+
+
+                                            {/*<p className="card-title">Flutter Fitness App UI</p>*/}
+                                            {/*<div className="card-body">*/}
+                                            {/*    <p className="card-text">*/}
+                                            {/*        <Tag list={fitnessAppList}/>*/}
+                                            {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
+                                            {/*                            onClick={() => this.onCardClicked(Image6,"IMAGE")}/>*/}
+                                            {/*    </p>*/}
+                                            {/*</div>*/}
+                                        </div>
+                                    </div>
+
                                 </div>
+
+                                <div className="carousel-item">
+
+                                    <div className="col-sm zoomImage mb-3">
+                                        <div className="card card__">
+
+                                            <div className="row ">
+                                                <div className="col">
+                                                    <p className="card-title">Flutter Hotel Reservation UI</p>
+                                                </div>
+                                                <div className="col justify-content-center align-self-center">
+                                                    <BsArrowsFullscreen className="full_screen_icon"
+                                                                        onClick={() => this.onCardClicked(Image7,"IMAGE")}/>
+                                                </div>
+                                            </div>
+
+
+
+                                            <img className="card-img-top card_imge" src={Image7} alt="Card image cap"/>
+
+
+
+                                            {/*<p className="card-title">Flutter Fitness App UI</p>*/}
+                                            {/*<div className="card-body">*/}
+                                            {/*    <p className="card-text">*/}
+                                            {/*        <Tag list={fitnessAppList}/>*/}
+                                            {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
+                                            {/*                            onClick={() => this.onCardClicked(Image6,"IMAGE")}/>*/}
+                                            {/*    </p>*/}
+                                            {/*</div>*/}
+                                        </div>
+                                    </div>
+
+                                </div>
+
 
 
                             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button"
