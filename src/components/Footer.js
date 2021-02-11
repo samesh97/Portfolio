@@ -34,7 +34,7 @@ class Footer extends React.Component
                 </div>
                 <div className="row">
 
-                    <span className="email_text">buddikamsamesh1@gmail.com</span>
+                    <span className="email_text">buddikasamesh1@gmail.com</span>
 
                 </div>
                 <div className="row">
