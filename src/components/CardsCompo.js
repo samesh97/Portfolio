@@ -7,8 +7,10 @@ import Image5 from '../images/5.png';
 import Image6 from '../images/6.png';
 import Image7 from '../images/7.png'
 import Image33 from '../images/33.png';
-
+import Image4 from '../images/4.png';
 import video from '../videos/video-5.mp4';
+
+import fullScreenImage from '../images/full_screen.png';
 
 import FullScreenDialog from "./FullScreenDialog";
 import Tag from '../components/Tag';
@@ -30,9 +32,9 @@ class CardsCompo extends React.Component
 
         this.state = {
 
-            isFullScreen : false,
-            source : '',
-            type : ''
+            source : Image11,
+            type : '',
+            clickedPosition : 0
 
         };
     }
@@ -91,312 +93,63 @@ class CardsCompo extends React.Component
             "Dart"
         ];
 
+        const ImageList = [
+            Image11,
+            Image22,
+            Image5,
+            Image6,
+            Image7,
+            Image33,
+            Image4
+
+        ];
+
+        const ViewList = ImageList.map((image,pos) => {
+
+                if(this.state.clickedPosition === pos)
+                {
+                    return <div class="grid-item selectedItem" onClick={() => this.onCardClicked(image,"IMAGE",pos)}>
+                                <img className="card-image" src={image}/>   
+                           </div>
+                }
+                else
+                {
+                    return <div class="grid-item" onClick={() => this.onCardClicked(image,"IMAGE",pos)}>
+                                <img className="card-image" src={image}/>   
+                           </div>
+                }
+
+        });
+
 
 
         return(
 
-            <div className="container__ pt-5 pb-5" id="experiences">
-                <div className="container-fluid">
-                    <p className="mb-5 exText" >Recent work</p>
-                    <div className="row">
+           
 
-                        <div className="col-sm">
+            <div class="cards-container">
 
 
-                            <div className="carousel-item active">
-
-                                <div className="col-sm zoomImage mb-3">
-                                    <div className="card card__">
-
-
-
-                                        <div className="row card_top_container">
-                                            <div className="col">
-                                                <p className="card-title">Singlish Translator</p>
-                                            </div>
-                                            <div className="col justify-content-center align-self-center">
-                                                <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(video,"VIDEO")}/>
-                                            </div>
-                                        </div>
-
-
-                                        <video src={video} autoPlay loop muted className="card_video"/>
-
-
-
-                                        {/*<div className="card-body">*/}
-                                        {/*    <p className="card-text">*/}
-                                        {/*        <Tag list={singlishAppList}/>*/}
-                                        {/*        <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(video,"VIDEO")}/>*/}
-                                        {/*    </p>*/}
-                                        {/*</div>*/}
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div className="col-sm">
-
-
-                        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-                            <ol className="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"/>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"/>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"/>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="3"/>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="4"/>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="5"/>
-                            </ol>
-                            <div className="carousel-inner">
-
-                                <div className="carousel-item active">
-
-                                            <div className="col-sm zoomImage mb-3">
-                                                <div className="card card__">
-
-                                                    <div className="row ">
-                                                        <div className="col">
-                                                            <p className="card-title">Android Food App</p>
-                                                        </div>
-                                                        <div className="col justify-content-center align-self-center">
-                                                            <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(Image11,"IMAGE")}/>
-                                                        </div>
-                                                    </div>
-
-
-
-                                                    <img className="card-img-top card_imge" src={Image11} alt="Card image cap"/>
-
-
-
-                                                    {/*<div className="card-body">*/}
-                                                    {/*    <p className="card-text">*/}
-                                                    {/*       <Tag list={foodAppList}/>*/}
-                                                    {/*        <BsArrowsFullscreen className="full_screen_icon"  onClick={() => this.onCardClicked(Image11,"IMAGE")}/>*/}
-                                                    {/*    </p>*/}
-                                                    {/*</div>*/}
-                                                </div>
-                                            </div>
-
-                                </div>
-
-                                <div className="carousel-item">
-
-                                            <div className="col-sm zoomImage mb-3">
-                                                <div className="card card__">
-
-
-                                                    <div className="row ">
-                                                        <div className="col">
-                                                            <p className="card-title">Android Photo Editor</p>
-                                                        </div>
-                                                        <div className="col justify-content-center align-self-center">
-                                                            <BsArrowsFullscreen className="full_screen_icon"
-                                                                                onClick={() => this.onCardClicked(Image22,"IMAGE")}/>
-                                                        </div>
-                                                    </div>
-
-
-
-                                                    <img className="card-img-top card_imge" src={Image22} alt="Card image cap"/>
-
-
-
-                                                    {/*<div className="card-body">*/}
-                                                    {/*    <p className="card-text">*/}
-                                                    {/*      <Tag list={sinhalaAppList}/>*/}
-                                                    {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
-                                                    {/*                            onClick={() => this.onCardClicked(Image22,"IMAGE")}/>*/}
-                                                    {/*    </p>*/}
-                                                    {/*</div>*/}
-                                                </div>
-                                            </div>
-
-
-                                </div>
-
-                                <div className="carousel-item">
-
-                                    <div className="col-sm zoomImage mb-3">
-                                                    <div className="card card__">
-
-
-                                                        <div className="row ">
-                                                            <div className="col">
-                                                                <p className="card-title">Android Quote Maker</p>
-                                                            </div>
-                                                            <div className="col justify-content-center align-self-center">
-                                                                <BsArrowsFullscreen className="full_screen_icon"
-                                                                                    onClick={() => this.onCardClicked(Image5,"IMAGE")}/>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <img className="card-img-top card_imge" src={Image5} alt="Card image cap"/>
-
-
-
-
-                                                        {/*<p className="card-title">Android Quote Maker</p>*/}
-                                                        {/*<div className="card-body">*/}
-                                                        {/*    <p className="card-text">*/}
-                                                        {/*        <Tag list={quoteMakerAppList}/>*/}
-                                                        {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
-                                                        {/*                            onClick={() => this.onCardClicked(Image5,"IMAGE")}/>*/}
-                                                        {/*    </p>*/}
-                                                        {/*</div>*/}
-                                                    </div>
-                                                </div>
-
-                                </div>
-
-                                <div className="carousel-item">
-
-                                            <div className="col-sm zoomImage mb-3">
-                                                <div className="card card__">
-
-                                                    <div className="row ">
-                                                        <div className="col">
-                                                            <p className="card-title">Flutter Fitness App UI</p>
-                                                        </div>
-                                                        <div className="col justify-content-center align-self-center">
-                                                            <BsArrowsFullscreen className="full_screen_icon"
-                                                                                onClick={() => this.onCardClicked(Image6,"IMAGE")}/>
-                                                        </div>
-                                                    </div>
-
-
-
-                                                    <img className="card-img-top card_imge" src={Image6} alt="Card image cap"/>
-
-
-
-                                                    {/*<p className="card-title">Flutter Fitness App UI</p>*/}
-                                                    {/*<div className="card-body">*/}
-                                                    {/*    <p className="card-text">*/}
-                                                    {/*        <Tag list={fitnessAppList}/>*/}
-                                                    {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
-                                                    {/*                            onClick={() => this.onCardClicked(Image6,"IMAGE")}/>*/}
-                                                    {/*    </p>*/}
-                                                    {/*</div>*/}
-                                                </div>
-                                            </div>
-
-                                </div>
-
-                                <div className="carousel-item">
-
-                                    <div className="col-sm zoomImage mb-3">
-                                        <div className="card card__">
-
-                                            <div className="row ">
-                                                <div className="col">
-                                                    <p className="card-title">Android Chat App</p>
-                                                </div>
-                                                <div className="col justify-content-center align-self-center">
-                                                    <BsArrowsFullscreen className="full_screen_icon"
-                                                                        onClick={() => this.onCardClicked(Image33,"IMAGE")}/>
-                                                </div>
-                                            </div>
-
-
-
-                                            <img className="card-img-top card_imge" src={Image33} alt="Card image cap"/>
-
-
-
-                                            {/*<p className="card-title">Flutter Fitness App UI</p>*/}
-                                            {/*<div className="card-body">*/}
-                                            {/*    <p className="card-text">*/}
-                                            {/*        <Tag list={fitnessAppList}/>*/}
-                                            {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
-                                            {/*                            onClick={() => this.onCardClicked(Image6,"IMAGE")}/>*/}
-                                            {/*    </p>*/}
-                                            {/*</div>*/}
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="carousel-item">
-
-                                    <div className="col-sm zoomImage mb-3">
-                                        <div className="card card__">
-
-                                            <div className="row ">
-                                                <div className="col">
-                                                    <p className="card-title">Flutter Hotel Reservation UI</p>
-                                                </div>
-                                                <div className="col justify-content-center align-self-center">
-                                                    <BsArrowsFullscreen className="full_screen_icon"
-                                                                        onClick={() => this.onCardClicked(Image7,"IMAGE")}/>
-                                                </div>
-                                            </div>
-
-
-
-                                            <img className="card-img-top card_imge" src={Image7} alt="Card image cap"/>
-
-
-
-                                            {/*<p className="card-title">Flutter Fitness App UI</p>*/}
-                                            {/*<div className="card-body">*/}
-                                            {/*    <p className="card-text">*/}
-                                            {/*        <Tag list={fitnessAppList}/>*/}
-                                            {/*        <BsArrowsFullscreen className="full_screen_icon"*/}
-                                            {/*                            onClick={() => this.onCardClicked(Image6,"IMAGE")}/>*/}
-                                            {/*    </p>*/}
-                                            {/*</div>*/}
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-
-                            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                               data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"/>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                               data-slide="next">
-                                <span className="carousel-control-next-icon " aria-hidden="false"/>
-                                <span className="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-
-
-
+                <div class="grid-view" id="style-1">
+                    
+                    {ViewList}
+                    
                 </div>
-                {
-                    this.state.isFullScreen && <FullScreenDialog cancelled={() => this.onCancel()} source={this.state.source} type={this.state.type}/>
-                }
-
+                <div class="div-full-tech-image">
+                    <img src={this.state.source} class="large-preview-image"></img>
+                </div>
 
             </div>
         )
     }
-    onCardClicked = (source,type) => {
+    onCardClicked = (source,type,pos) => {
 
         this.setState({
-            isFullScreen : true,
             source : source,
-            type : type
+            type : type,
+            clickedPosition : pos
         });
     }
-    onCancel = () => {
-
-        this.setState({
-            isFullScreen : false,
-            source : '',
-            type : ''
-        });
-    }
+   
 }
 export default CardsCompo;

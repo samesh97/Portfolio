@@ -1,14 +1,21 @@
 .nv{
     position: fixed;
     width: 100%;
-    z-index:1;
-    background: #6e44ff;
+    z-index:10;
+    border-bottom: 2px solid #dee2e6;
+    border-bottom-style: dashed;
     /*box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.01) 0px 3px 6px;*/
 }
+
+
 a
 {
     cursor: pointer;
     text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
 }
 a:hover
 {
@@ -24,5 +31,28 @@ a:hover
 }
 .nav-link_underlined
 {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #495057;
+}
+
+.div-contact
+{
+    position: absolute;
+    right: 100px;
+    top: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+.phone-icon
+{
+    width: 28px;
+    height: 28px;
+}
+.div-contact span
+{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 10px;
+    color: #6c757d;
 }

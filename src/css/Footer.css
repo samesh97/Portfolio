@@ -1,14 +1,22 @@
 .container___
 {
-    background: #6e44ff;
-    height: auto;
-    width: 100%;
+    background:transparent;
+    height: 413px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+
 }
 .icon
 {
     width: 28px;
     height: 28px;
     cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }
 .iconDiv
 {
@@ -27,18 +35,7 @@ a:hover
 {
     color: inherit;
 }
-.footer_span
-{
-    margin-left: 10px;
-}
-.all_right_reserved_text
-{
-    color: white;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    font-size: 12px;
-}
+
 .phone_number_text
 {
     color: white;

@@ -3,12 +3,16 @@
     width: 100%;
     min-height: auto;
     height: auto;
+
 }
 .span_about
 {
+    padding-top: 15px;
     text-align: left;
     font-size: 17px;
-    color: white;
+    color: #6c757d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14.5px;
 }
 .about_row
 {
@@ -20,6 +24,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    font-size: 14px;
 }
 @media screen and (max-width: 750px) {
     .span_about {
