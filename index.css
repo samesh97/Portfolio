@@ -137,7 +137,7 @@ body{
     margin-bottom: 15px;
 }
 .custom-bg {
-    position: absolute;
+    position: fixed;
     height: 106vh;
     bottom: 0;
     top:0;
